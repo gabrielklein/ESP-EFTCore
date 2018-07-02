@@ -1,0 +1,10 @@
+{
+  "time": 240282,
+  "config": {
+    "mqtt.server": "10.0.0.60",
+    "mqtt.port": "1883",
+    "mqtt.user": "",
+    "mqtt.password": "",
+    "mqtt.basetopic": "mytopic"
+  }
+}

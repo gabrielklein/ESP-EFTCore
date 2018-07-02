@@ -1,0 +1,28 @@
+{
+  "ap": [
+    {
+      "ssid": "KleinUp",
+      "enc": "8",
+      "dbm": -59,
+      "bssid": "C4:E9:84:EF:37:52",
+      "channel": 1,
+      "isHidden": false
+    },
+    {
+      "ssid": "Klein",
+      "enc": "4",
+      "dbm": -59,
+      "bssid": "E8:D1:1B:15:E5:30",
+      "channel": 6,
+      "isHidden": false
+    },
+    {
+      "ssid": "KleinDown",
+      "enc": "8",
+      "dbm": -59,
+      "bssid": "44:33:4C:B1:A9:64",
+      "channel": 11,
+      "isHidden": false
+    }
+  ]
+}

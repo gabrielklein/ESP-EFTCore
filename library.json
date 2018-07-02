@@ -1,0 +1,43 @@
+{
+  "name": "ESP-EFTCore",
+  "keywords": "ESP8266, Framework, Sensors, Core",
+  "description": "ESP-EFTCore is a framework to simplify support of different modules on the ESP8266 - You can then communicate them with REST and MQTT libraries.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/gabrielklein/ESP-EFTCore.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Gabriel Klein",
+      "email": "gabriel.klein@nuage.ch",
+      "url": "https://www.nuage.ch",
+      "maintainer": true
+    }
+  ],
+  "dependencies":
+  [
+      {
+          "name": "ArduinoJson"
+      },
+      {
+          "name": "WiFiManager"
+      },
+      {
+          "name": "PubSubClient"
+      },
+      {
+          "name": "NTPClient"
+      },
+      {
+          "name": "Time"
+      },
+      {
+          "name": "Timezone"
+      },
+  ],
+  "version": "0.9.0",
+  "frameworks": "arduino",
+  "platforms": "*"
+}

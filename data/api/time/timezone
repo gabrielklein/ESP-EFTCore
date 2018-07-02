@@ -1,0 +1,86 @@
+{
+  "time": 578749,
+  "tz": [
+    {
+      "id": "UTC",
+      "label": "Coordinated Universal Time (GMT)",
+      "tcr": "GMT",
+      "hms": "21:20:08",
+      "hour": 21,
+      "minute": 20,
+      "second": 8
+    },
+    {
+      "id": "ausET",
+      "label": "Australia Eastern Time Zone (Sydney, Melbourne)",
+      "tcr": "AEDT",
+      "hms": "08:20:08",
+      "hour": 8,
+      "minute": 20,
+      "second": 8
+    },
+    {
+      "id": "CE",
+      "label": "Central European Time (Frankfurt, Paris)",
+      "tcr": "CET",
+      "hms": "22:20:08",
+      "hour": 22,
+      "minute": 20,
+      "second": 8
+    },
+    {
+      "id": "UK",
+      "label": "United Kingdom (London, Belfast)",
+      "tcr": "GMT",
+      "hms": "21:20:08",
+      "hour": 21,
+      "minute": 20,
+      "second": 8
+    },
+    {
+      "id": "usET",
+      "label": "US Eastern Time Zone (New York, Detroit)",
+      "tcr": "EST",
+      "hms": "16:20:08",
+      "hour": 16,
+      "minute": 20,
+      "second": 8
+    },
+    {
+      "id": "usCT",
+      "label": "US Central Time Zone (Chicago, Houston)",
+      "tcr": "CST",
+      "hms": "15:20:08",
+      "hour": 15,
+      "minute": 20,
+      "second": 8
+    },
+    {
+      "id": "usMT",
+      "label": "US Mountain Time Zone (Denver, Salt Lake City)",
+      "tcr": "MST",
+      "hms": "14:20:08",
+      "hour": 14,
+      "minute": 20,
+      "second": 8
+    },
+    {
+      "id": "usAZ",
+      "label": "Arizona is US Mountain Time Zone but does not use DST",
+      "tcr": "MST",
+      "hms": "14:20:08",
+      "hour": 14,
+      "minute": 20,
+      "second": 8
+    },
+    {
+      "id": "usPT",
+      "label": "US Pacific Time Zone (Las Vegas, Los Angeles)",
+      "tcr": "PST",
+      "hms": "13:20:08",
+      "hour": 13,
+      "minute": 20,
+      "second": 8
+    }
+  ]
+}

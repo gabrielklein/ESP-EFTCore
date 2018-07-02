@@ -1,0 +1,15 @@
+{
+  "time": 57601,
+  "path": "config/mainconfig.txt",
+  "config": {
+    "dht.fahrenheit": "0",
+    "dht.updateEveryMS": "",
+    "dht.updateEveryS": "5",
+    "int.updateEveryMS": "",
+    "mqtt.basetopic": "mytopic",
+    "mqtt.password": "",
+    "mqtt.port": "1883",
+    "mqtt.server": "10.0.0.60",
+    "mqtt.user": ""
+  }
+}

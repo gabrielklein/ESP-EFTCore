@@ -1,0 +1,189 @@
+{
+  "time": 379388,
+  "modules": [
+    {
+      "type": "core",
+      "name": "core",
+      "fx": [
+        {
+          "api": "modules",
+          "desc": "List all compiled modules"
+        },
+        {
+          "api": "scan",
+          "desc": "Scan the network"
+        },
+        {
+          "api": "reset",
+          "desc": "Reset AP settings of the access point (don't reset other settings)"
+        },
+        {
+          "api": "reboot",
+          "desc": "Reboot the module"
+        },
+        {
+          "api": "config",
+          "desc": "View all configuration settings.",
+          "params": [
+            {
+              "param": "{configurationVariable}",
+              "type": "String",
+              "desc": "Change a variable - change is effective at reboot"
+            }
+          ]
+        }
+      ],
+      "description": "Core functionnalities of the hub and server"
+    },
+    {
+      "type": "mqtt",
+      "name": "mqtt",
+      "fx": [
+        {
+          "api": "mqtt/config",
+          "desc": "Configure the MQTT server",
+          "params": [
+            {
+              "param": "server",
+              "type": "string",
+              "desc": "Name of the server to connect to"
+            },
+            {
+              "param": "port",
+              "type": "number",
+              "desc": "Port to connect to (default 1883)"
+            },
+            {
+              "param": "user",
+              "type": "string",
+              "desc": "User of the mqtt server (empty = no user)"
+            },
+            {
+              "param": "password",
+              "type": "string",
+              "desc": "Password of the mqtt server (empty = no user)"
+            },
+            {
+              "param": "basetopic",
+              "type": "string",
+              "desc": "The basetopic will be added at the beginning of the string"
+            }
+          ]
+        }
+      ],
+      "description": "MQTT communication layer, communicate with a MQTT server (core)"
+    },
+    {
+      "type": "MTime",
+      "name": "time",
+      "fx": [
+        {
+          "api": "time",
+          "desc": "Get the current time"
+        },
+        {
+          "api": "time/timezone",
+          "desc": "Display supported timezones"
+        },
+        {
+          "api": "time/config",
+          "desc": "Configure the timezone",
+          "params": [
+            {
+              "param": "tz",
+              "type": "string",
+              "desc": "Timezone to be displayed"
+            }
+          ]
+        }
+      ],
+      "description": "Configure the time service"
+    },
+    {
+      "type": "MInterrupt",
+      "name": "int",
+      "fx": [
+        {
+          "api": "int",
+          "desc": "View statistics of the number of time the module was interupted the last x period of time"
+        },
+        {
+          "api": "int/config",
+          "desc": "Configure the interruptions",
+          "params": [
+            {
+              "param": "updateEveryS",
+              "type": "number",
+              "desc": "Upload every x seconds"
+            }
+          ]
+        }
+      ],
+      "description": "Support for DHTxx temperature and humidity modules (DS18B20, DS1822, DS1820, MAX31820)"
+    },
+    {
+      "type": "MNeoPixel",
+      "name": "neo",
+      "fx": [
+        {
+          "api": "neo",
+          "desc": "Configure a RGB multicolor strip",
+          "params": [
+            {
+              "param": "d",
+              "type": "string",
+              "desc": "Colors of the strip (Ex: x red green blue ff9900)"
+            }
+          ]
+        }
+      ],
+      "description": "Control a RGB strip (NeoPixel)"
+    },
+    {
+      "type": "MDht",
+      "name": "dht",
+      "fx": [
+        {
+          "api": "dht",
+          "desc": "View temperature and humidity of the DHTxx module"
+        },
+        {
+          "api": "dht/config",
+          "desc": "Configure the DHTxx",
+          "params": [
+            {
+              "param": "fahrenheit",
+              "type": "boolean",
+              "desc": "Do we display temperature in fahrenheit instead of celsius"
+            },
+            {
+              "param": "updateEveryS",
+              "type": "number",
+              "desc": "Upload every x seconds"
+            }
+          ]
+        }
+      ],
+      "description": "Support for DHTxx temperature and humidity modules"
+    }
+  ],
+  "mqttSub": [
+    {
+      "topic": "/nuke/neo"
+    }
+  ],
+  "mqttPub": [
+    {
+      "topic": "/nuke/dht",
+      "message": "19.50,19.70"
+    },
+    {
+      "topic": "/nuke/int",
+      "message": "0,1,0.07,0.02,0.00,0.00,0.00"
+    },
+    {
+      "topic": "/nuke/mqtt/setup",
+      "message": "ESPRadioactivity_E047,10.0.0.144"
+    }
+  ]
+}
