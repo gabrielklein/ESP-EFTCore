@@ -18,7 +18,7 @@
   ],
   "dependencies": {
           "ArduinoJson": "*",
-          "WiFiManager": "*",
+          "WifiManager": "*",
           "PubSubClient": "*",
           "NTPClient": "*",
           "Time": "*",
