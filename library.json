@@ -16,28 +16,15 @@
       "maintainer": true
     }
   ],
-  "dependencies":
-  [
-      {
-          "name": "ArduinoJson"
-      },
-      {
-          "name": "WiFiManager"
-      },
-      {
-          "name": "PubSubClient"
-      },
-      {
-          "name": "NTPClient"
-      },
-      {
-          "name": "Time"
-      },
-      {
-          "name": "Timezone"
-      }
-  ],
-  "version": "0.9.0",
+  "dependencies": {
+          "ArduinoJson": "*",
+          "WiFiManager": "*",
+          "PubSubClient": "*",
+          "NTPClient": "*",
+          "Time": "*",
+          "Timezone": "*"
+  },
+  "version": "0.01",
   "frameworks": "arduino",
   "platforms": "*"
 }
